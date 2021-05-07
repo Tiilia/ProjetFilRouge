@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Ceci est mon deuxième site créé lors de ma formation.">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- importation police Barlow -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- importation police Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Mon deuxième site</title>
+</head>
+
+<body>
+    <header class="sticky">
+        <div class="banner">
+            <!-- div vide, image ajoutée en css -->
+        </div>
+        <div class="navigation">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" title="Aller à la page">Accueil</a>
+                </li>
+                <li>
+                    <a href="contact.html" title="Aller à la page">Contact</a>
+                </li>
+                <li>
+                    <a href="https://www.interface3namur.be" title="Aller à la page" target="_blank">Interface3Namur</a>
+                </li>
+            </ul>
+        </nav></div>
+    </header>
+
+    <main>
+        <h1>Contact</h1>
+        <section>
+            <h2 class="majuscule">Horaire</h2>
+            <article>
+                <h3>Mes disponibilités</h3>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Lundi</th>
+                                <th>Mardi</th>
+                                <th>Mercredi</th>
+                                <th>Jeudi</th>
+                                <th>Vendredi</th>
+                                <th>Samedi</th>
+                                <th>Dimanche</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Matin</th>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Non dispo</td>
+                            </tr>
+                            <tr>
+                                <th>Soir</th>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Dispo</td>
+                                <td>Non dispo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </article>
+            <article>
+                <h2>Formulaire de contact</h2>
+                <form action="#" method="POST">
+                    <div>
+                        <label for="mail">Votre adresse email:</label>
+                        <input type="email" name="mail" id="mail" placeholder="tuto@tuto.be" required autofocus>
+                    </div>
+                    <div>
+                        <label for="jour">Je désire prendre rendez-vous le:</label>
+                        <select name="jour" id="jour">
+                            <option value="">-- Jour --</option>
+                            <optgroup label="Lundi">
+                                <option value="lundiMatin">Matin</option>
+                                <option value="lundiSoir">Soir</option>
+                            </optgroup>
+                            <optgroup label="Mardi">
+                                <option value="mardiMatin">Matin</option>
+                                <option value="mardiSoir">Soir</option>
+                            </optgroup>
+                            <optgroup label="Mercredi">
+                                <option value="mercrediMatin">Matin</option>
+                                <option value="mercrediSoir">Soir</option>
+                            </optgroup>
+                            <optgroup label="Jeudi">
+                                <option value="jeudiMatin">Matin</option>
+                                <option value="jeudiSoir">Soir</option>
+                            </optgroup>
+                            <optgroup label="Vendredi">
+                                <option value="vendrediMatin">Matin</option>
+                                <option value="vendrediSoir">Soir</option>
+                            </optgroup>
+                            <optgroup label="Samedi">
+                                <option value="samediMatin">Matin</option>
+                                <option value="samediSoir">Soir</option>
+                            </optgroup>
+                            <optgroup label="Dimanche" disabled>
+                                <option value="dimancheMatin">Matin</option>
+                                <option value="dimancheSoir">Soir</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Entrez votre message ici:</label> <br>
+                        <textarea name="message" id="message" cols="60" rows="10" placeholder="Message..." required></textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="newLetter" name="newLetter" checked>
+                        <label for="newLetter">Je m'inscris à la newletter</label>
+                    </div>
+                    <div>
+                        <label for="file">Votre coupon de réduction (.pdf)</label> <br>
+                        <input type="file" name="file" id="file" accept=".pdf">
+                        <!-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input/file -->
+                    </div>
+                    <div class="buttons">
+                        <input type="submit" value="Envoyer">
+                        <input type="reset" value="Annuler">
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h3 class="majuscule">Informations</h3>
+        <p>Site web pour<strong> Dévelopeuse•eur Back-End orienté DATA</strong></p>
+        <p><strong>Pauline Dosimont</strong> &copy;2021</p>
+    </footer>
+</body>
+
+</html>
